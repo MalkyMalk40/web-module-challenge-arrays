@@ -44,11 +44,10 @@ Use the copy function below to do the following:
   1. receive an array as a parameter - you will pass in originalFlavors as an argument when the function is invoked.
   2. Return a copy of the received array
 */
-var copyArray = []
 
-function copy(originalFlavors) {
-    const copyArray = [...copy]
-    return copyArray;
+
+function copy(array) {
+    let newCopy = new Array();
 }
 console.log(copyArray);
 
@@ -67,10 +66,10 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(originalFlavors) {
-    if (array.length === 31) {
-        console.log(true)
-    } else(array.length !== 31)
-    console.log(false)
+    if (originalFlavors.length === 31) {
+        return true;
+    } else(originalFlavors.length !== 31)
+    return false
 
 }
 
@@ -88,8 +87,8 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(originalFlavors) {
-    addFlavor.unshift("mango")
-    return addFlavor;
+    originalFlavors.unshift("mango")
+    console.log(addFlavor);
 }
 
 
@@ -104,8 +103,8 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(array) {
-    removeLastFlavor.pop()
+function removeLastFlavor(originalFlavors) {
+    originalFlavors.pop()
     return removeLastFlavor;
 }
 
@@ -122,10 +121,10 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(array, []) {
-    getFlavorByIndex.indexOf(array, 2)
-    return getFlavorByIndex;
-}
+function getFlavorByIndex(originalFlavors, [])
+originalFlavors.indexOf(originalFlavors, 2)
+return getFlavorByIndex;
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -172,9 +171,9 @@ Use the filterByWord function below to do the following:
 function filterByWord(originalFlavors, string) {
     ` `
     let filteredArray = [];
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < originalFlavors.length; i++) {
         if (originalFlavors[i].includes, "chocolate") {
-            return filteredArray[i]
+            return filteredArray["chocolate"]
         }
     }
 }
