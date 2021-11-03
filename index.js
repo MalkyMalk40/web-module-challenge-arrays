@@ -48,8 +48,10 @@ Use the copy function below to do the following:
 
 function copy(array) {
     let newCopy = new Array();
+    console.log(newCopy);
 }
-console.log(copyArray);
+
+
 
 
 
@@ -65,12 +67,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(originalFlavors) {
-    if (originalFlavors.length === 31) {
+function is31Flavors(array) {
+    if (array.length === 31) {
         return true;
-    } else(originalFlavors.length !== 31)
+    } else(array.length !== 31)
     return false
-
+    console.log(is31Flavors(originalFlavors))
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -86,8 +88,8 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(originalFlavors) {
-    originalFlavors.unshift("mango")
+function addFlavor(array) {
+    array.unshift("mango")
     console.log(addFlavor);
 }
 
@@ -142,8 +144,8 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(originalFlavors, []) {
-    removeFlavorByName.splice(0, 1, "Rocky Road");
+function removeFlavorByName(array, [i]) {
+    removeFlavorByName.splice(0, 1);
 }
 
 
@@ -168,14 +170,14 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 */
 
-function filterByWord(originalFlavors, string) {
-    ` `
+function filterByWord(array, string) {
     let filteredArray = [];
-    for (let i = 0; i < originalFlavors.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (originalFlavors[i].includes, "chocolate") {
             return filteredArray["chocolate"]
         }
     }
+    console.log(filterByWord(originalFlavors))
 }
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/
 
